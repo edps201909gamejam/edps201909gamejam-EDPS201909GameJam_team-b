@@ -257,7 +257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 273225681}
   m_Layer: 5
-  m_Name: Times
+  m_Name: GamePlayTimes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 799732326}
   - component: {fileID: 799732325}
   m_Layer: 5
-  m_Name: ElapsedTime
+  m_Name: GameTime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

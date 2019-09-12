@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,8 +6,8 @@ public class GameStartCount : GameStatus
 {    
     private Text startCount;
     private float initCount = 4.0f;
-    
-    public override void Reset()
+
+    public GameStartCount()
     {
         startCount = GameObject.Find("StartCount").GetComponent<Text>();
         startCount.gameObject.SetActive(true);
