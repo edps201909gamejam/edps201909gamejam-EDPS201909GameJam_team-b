@@ -20,7 +20,7 @@ public class SceneSelectManager : SingletonMonoBehaviour<SceneSelectManager>
 
     public void ChangeStage1Scene()
     {
-        SceneManager.LoadScene("NewStage1", LoadSceneMode.Additive);
+        SceneManager.LoadScene("Stage1Scene", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("StageSelectScene");
     }
     
