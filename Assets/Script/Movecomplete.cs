@@ -17,6 +17,7 @@ public class Movecomplete : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /* 
         if (Input.GetKey("up"))
         {
             transform.position += transform.forward * speed;
@@ -34,6 +35,13 @@ public class Movecomplete : MonoBehaviour
         {
             transform.position -= transform.forward * speed;
         }
+        */
+
+        float dx = Input.GetAxis("Horizontal");
+        float dy = Input.GetAxis("Vertical");
+
+        transform.position += dy * transform.forward * speed;
+        transform.Rotate(0, dx * turn, 0);
 
 
     }
