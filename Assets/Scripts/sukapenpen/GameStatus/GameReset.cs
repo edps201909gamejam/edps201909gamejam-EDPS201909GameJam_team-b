@@ -7,6 +7,7 @@ public class GameReset : GameStatus
     public override GameStatus Run(float _time, int _doors)
     {
         UIManager.Instance.Reset(_doors);
+        MapLoader.Instance.Reset();
         return new GameStartCount();
     }
 }

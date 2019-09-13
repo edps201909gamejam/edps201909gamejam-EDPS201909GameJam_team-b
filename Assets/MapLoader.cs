@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapLoader : MonoBehaviour
+public class MapLoader : SingletonMonoBehaviour<MapLoader>
 {
     public GameObject _map;
     public int[,] STAGE0MAP = {
@@ -57,8 +57,20 @@ public class MapLoader : MonoBehaviour
     };
 
     // Start is called before the first frame update
-    void Start() {
-        var MAP = STAGE3MAP;
+    void Awake()
+    {
+        Reset();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void Reset()
+    {
+        var MAP = STAGE1MAP;
         for (int i = 0; i < 8; i++) {
             for (int k = 0; k < 8; k++) {
                 if (MAP[i, k] == 0) {
@@ -66,11 +78,5 @@ public class MapLoader : MonoBehaviour
                 }
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
