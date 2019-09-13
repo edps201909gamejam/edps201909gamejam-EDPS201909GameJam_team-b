@@ -35,4 +35,9 @@ public class SceneSelect : SingletonMonoBehaviour<SceneSelect>
         SceneManager.LoadScene("Stage3Scene", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("StageSelectScene");
     }
+
+    public void GameRestart()
+    {
+        StageManager.Instance.Reset();
+    }
 }
