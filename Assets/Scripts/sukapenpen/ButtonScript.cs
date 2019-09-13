@@ -14,5 +14,20 @@ public class ButtonScript : MonoBehaviour
     {
         SceneSelect.Instance.ChangeStage1Scene();
     }
+    
+    public void LoadStage2()
+    {
+        SceneSelect.Instance.ChangeStage2Scene();
+    }
+    
+    public void LoadStage3()
+    {
+        SceneSelect.Instance.ChangeStage3Scene();
+    }
+
+    public void Restart()
+    {
+        SceneSelect.Instance.GameRestart();
+    }
 
 }

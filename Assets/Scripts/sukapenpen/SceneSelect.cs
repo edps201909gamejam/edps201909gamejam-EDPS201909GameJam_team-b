@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneSelect : SingletonMonoBehaviour<SceneSelect>
 {
+    //頭の悪い実装
+    
     private void Awake()
     {
         SceneManager.LoadScene("TitleScene", LoadSceneMode.Additive);
@@ -20,5 +22,22 @@ public class SceneSelect : SingletonMonoBehaviour<SceneSelect>
     {
         SceneManager.LoadScene("Stage1Scene", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("StageSelectScene");
+    }
+    
+    public void ChangeStage2Scene()
+    {
+        SceneManager.LoadScene("Stage2Scene", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("StageSelectScene");
+    }
+    
+    public void ChangeStage3Scene()
+    {
+        SceneManager.LoadScene("Stage3Scene", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("StageSelectScene");
+    }
+
+    public void GameRestart()
+    {
+        StageManager.Instance.Reset();
     }
 }
