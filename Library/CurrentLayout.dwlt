@@ -116,7 +116,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 448}
   m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 46
+  controlID: 55
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 102
+  controlID: 13
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -413,9 +413,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
     m_Target: 63.922623
     speed: 2
@@ -462,7 +462,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 74fbffffd4fbffff
+      m_ExpandedIDs: c8f1ffff42f7ffff38f8ffff8ef8ffff46f9ffff385e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -523,8 +523,7 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Scenes/sukapenpen/GameStage
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders:
@@ -537,7 +536,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: c4260000
     m_LastClickedID: 9924
-    m_ExpandedIDs: 000000009c090000d20900000c0a0000260a0000520a0000da0a0000f60a0000980b0000b40b0000d80b000012290000
+    m_ExpandedIDs: 000000003e2b0000742b0000ae2b0000c82b0000f42b00007c2c0000982c00001c2d00003a2d0000562d00007a2d0000023a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -565,7 +564,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 220}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff000000009c090000d20900000c0a0000260a0000520a0000da0a0000f60a00007a0b0000980b0000b40b0000d80b000012290000
+    m_ExpandedIDs: ffffffff000000003e2b0000742b0000ae2b0000c82b0000f42b00007c2c0000982c00001c2d00003a2d0000562d00007a2d0000023a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
