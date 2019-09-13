@@ -28,8 +28,12 @@ public class GamePlaying : GameStatus
         return time;
     }
     
+    
+    
     public override GameStatus NextEx()
     {
         return this;
     }
+    
+    
 }

@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExStatus : GameStatus
+public class ClearStatus : GameStatus
 {
-    //private GameObject 
-    public ExStatus()
+    public string clearTime { get; private set; }
+    
+    public ClearStatus(string _clearTime)
     {
-        UIManager.Instance.AppearMission();
+        this.clearTime = _clearTime;
     }
-
+    
     public override GameStatus Run(float _time, int _doors, GameObject _player)
     {
         return this;
@@ -19,5 +20,4 @@ public class ExStatus : GameStatus
     {
         return this;
     }
-
 }

@@ -6,6 +6,9 @@ public class StageManager : SingletonMonoBehaviour<StageManager>
 {
     [SerializeField]
     private int availableDoors;
+
+    [SerializeField]
+    private int mustItems;
     
     private GameStatus gameStatus;
 
@@ -30,8 +33,15 @@ public class StageManager : SingletonMonoBehaviour<StageManager>
 
     public void NextEx()
     {
-        Debug.Log("3");
         gameStatus = gameStatus.NextEx();
+    }
+
+    public void ClearJudge(int _itemCount)
+    {
+        if (_itemCount > mustItems)
+        {
+            gameStatus = new ClearStatus();
+        }
     }
     
 }

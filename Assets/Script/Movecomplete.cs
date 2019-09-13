@@ -57,6 +57,8 @@ public class Movecomplete : MonoBehaviour
 
             // 何らかの処理
             count = count + 1;
+            UIManager.Instance.WriteTresureCount(count);
+            StageManager.Instance.ClearJudge(count);
         }
     }
 
@@ -67,6 +69,7 @@ public class Movecomplete : MonoBehaviour
     }
     
     //Playerの初期化、リザルトまでデータを持っていく
-   
+    
+    
 
 }

@@ -17,6 +17,8 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
     private Text tresures;
     private Text doors;
 
+    private Text clearTime;
+
     private void Awake()
     {
         explanation = new GameObject[3];
