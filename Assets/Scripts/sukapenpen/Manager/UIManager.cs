@@ -26,7 +26,7 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
     {
         startCount.gameObject.SetActive(true);
         tresures.text = "×0";
-        doors.text = _availableDoors.ToString();
+        doors.text = "×" + _availableDoors.ToString();
         gameTime.text = "00:00:00";
     }
 

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/sukapenpen/GameStage/Stage4Scene.unity
+- path: Assets/Scenes/sukapenpen/SceneSelect.unity
   isLoaded: 1
   isActive: 1

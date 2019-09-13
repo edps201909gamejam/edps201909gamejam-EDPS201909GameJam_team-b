@@ -8,6 +8,7 @@ public class GameReset : GameStatus
     {
         UIManager.Instance.Reset(_doors);
         MapLoader.Instance.Reset();
+        GameObject.Find("Player").GetComponent<Movecomplete>().Reset(_doors);
         return new GameStartCount();
     }
 }
