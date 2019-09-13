@@ -11,7 +11,7 @@ public class GamePlaying : GameStatus
         this.elapsedTime = 0.0f;
     }
     
-    public override GameStatus Run(float _time, int _doors = 0)
+    public override GameStatus Run(float _time, int _doors, GameObject _player)
     {
         this.elapsedTime += _time;
         UIManager.Instance.WriteGameTime(GameTime());
@@ -26,5 +26,10 @@ public class GamePlaying : GameStatus
         var time = minutes + ":" + seconds + ":" + underSeconds;
         
         return time;
+    }
+    
+    public override GameStatus NextEx()
+    {
+        return this;
     }
 }

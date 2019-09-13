@@ -11,7 +11,7 @@ public class GameStartCount : GameStatus
         this.elapsedTime = initCount;
     }
     
-    public override GameStatus Run(float _time, int _doors = 0)
+    public override GameStatus Run(float _time, int _doors, GameObject _player)
     {
         this.elapsedTime -= _time;
         UIManager.Instance.WriteStartCount(this.elapsedTime);
@@ -20,6 +20,11 @@ public class GameStartCount : GameStatus
             return new GamePlaying();
         }
 
+        return this;
+    }
+    
+    public override GameStatus NextEx()
+    {
         return this;
     }
 }

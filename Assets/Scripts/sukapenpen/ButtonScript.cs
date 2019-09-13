@@ -30,4 +30,10 @@ public class ButtonScript : MonoBehaviour
         SceneSelectManager.Instance.GameRestart();
     }
 
+    public void ExState()
+    {
+        Debug.Log("1");
+        SceneSelectManager.Instance.NextEx();
+    }
+
 }

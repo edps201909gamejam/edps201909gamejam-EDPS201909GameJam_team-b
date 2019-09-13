@@ -40,4 +40,9 @@ public class SceneSelectManager : SingletonMonoBehaviour<SceneSelectManager>
     {
         StageManager.Instance.Reset();
     }
+
+    public void NextEx()
+    {
+        StageManager.Instance.NextEx();
+    }
 }
