@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Scenes/sukapenpen/TitleScene.unity
+    guid: 5dfee6b67af4c438ebba01004d163c83
+  - enabled: 1
+    path: Assets/Scenes/sukapenpen/SceneSelect.unity
+    guid: b6338b44439df40959db0c23b91c0b3f
+  - enabled: 1
+    path: Assets/Scenes/sukapenpen/Stage1Scene.unity
+    guid: 2ea5bc7ea05d6486f9fc83e358691b75
+  - enabled: 1
+    path: Assets/Scenes/sukapenpen/StageSelectScene.unity
+    guid: 79196c222ac9e4c18b09114b7d096564
+=======
+    path: Assets/Scenes/SceneSelect.unity
+    guid: 96c5044f6f4ef44c4998add9cff20233
+  - enabled: 1
+    path: Assets/Scenes/TitleScene.unity
+    guid: 0fed8749d40ba475a927d67fd6c656a0
+  - enabled: 1
+    path: Assets/Scenes/StageSelectScene.unity
+    guid: 0333dfd611c624ef2bfb0636beaa4ad4
+  - enabled: 1
+    path: Assets/Scenes/Stage1Scene.unity
+    guid: 5b3e2e7292ecb4f77b316897c936f81d
+>>>>>>> 830a9fca46aeaba9e0dd9e4b0c6815d0ed34d451
+  m_configObjects: {}
