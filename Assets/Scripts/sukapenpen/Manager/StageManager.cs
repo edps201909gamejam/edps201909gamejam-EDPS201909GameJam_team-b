@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class StageManager : SingletonMonoBehaviour<StageManager>
 {
@@ -40,8 +41,18 @@ public class StageManager : SingletonMonoBehaviour<StageManager>
     {
         if (_itemCount > mustItems)
         {
-            gameStatus = new ClearStatus();
+            gameStatus = new ClearStatus(GameTime(gameStatus.elapsedTime));
         }
+    }
+    
+    private string GameTime(float _elapsedTime)
+    {
+        var minutes = ((int)_elapsedTime / 60).ToString("00");
+        var seconds = Math.Floor(_elapsedTime).ToString("00");
+        var underSeconds = Math.Floor(_elapsedTime % 1 * 100).ToString("00");
+        var time = minutes + ":" + seconds + ":" + underSeconds;
+        
+        return time;
     }
     
 }

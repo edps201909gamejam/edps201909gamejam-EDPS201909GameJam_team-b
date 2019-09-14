@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/sukapenpen/TitleScene.unity
-    guid: 5dfee6b67af4c438ebba01004d163c83
-  - enabled: 1
     path: Assets/Scenes/sukapenpen/SceneSelect.unity
     guid: b6338b44439df40959db0c23b91c0b3f
   - enabled: 1
-    path: Assets/Scenes/sukapenpen/Stage1Scene.unity
-    guid: 2ea5bc7ea05d6486f9fc83e358691b75
+    path: Assets/Scenes/sukapenpen/TitleScene.unity
+    guid: 5dfee6b67af4c438ebba01004d163c83
   - enabled: 1
     path: Assets/Scenes/sukapenpen/StageSelectScene.unity
     guid: 79196c222ac9e4c18b09114b7d096564

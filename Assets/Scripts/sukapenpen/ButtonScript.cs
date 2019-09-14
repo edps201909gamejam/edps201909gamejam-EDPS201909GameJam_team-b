@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class ButtonScript : MonoBehaviour
 {
@@ -32,8 +29,12 @@ public class ButtonScript : MonoBehaviour
 
     public void ExState()
     {
-        Debug.Log("1");
         SceneSelectManager.Instance.NextEx();
+    }
+
+    public void LoadTitle()
+    {
+        SceneSelectManager.Instance.ChangeTitleScene();
     }
 
 }

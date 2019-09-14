@@ -45,4 +45,9 @@ public class SceneSelectManager : SingletonMonoBehaviour<SceneSelectManager>
     {
         StageManager.Instance.NextEx();
     }
+
+    public void ChangeTitleScene()
+    {
+        SceneManager.LoadScene("TitleScene", LoadSceneMode.Additive);
+    }
 }

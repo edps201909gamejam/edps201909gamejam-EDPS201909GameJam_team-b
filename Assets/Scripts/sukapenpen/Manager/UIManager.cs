@@ -17,7 +17,10 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
     private Text tresures;
     private Text doors;
 
-    private Text clearTime;
+    private GameObject clears;
+    private GameObject clearTime;
+
+    private GameObject titleButtom;
 
     private void Awake()
     {
@@ -31,6 +34,13 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
         tresures = GameObject.Find("TresureCount").GetComponent<Text>();
         doors = GameObject.Find("DoorCount").GetComponent<Text>();
         gameTime = GameObject.Find("GameTime").GetComponent<Text>();
+
+        clears = GameObject.Find("Clears");
+        clears.SetActive(false);
+        clearTime = GameObject.Find("ClearText");
+        
+        titleButtom = GameObject.Find("TitleButton");
+        titleButtom.SetActive(false);
     }
 
     private void SetEx()
@@ -111,5 +121,11 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
             explanation[i].SetActive(false);
         }
         ExButton.SetActive(false);
+    }
+
+    public void ClearTime(string _time)
+    {
+        clearTime.GetComponent<Text>().text = _time;
+        clears.SetActive(true);
     }
 }
