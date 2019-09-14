@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class Movecomplete : MonoBehaviour
@@ -8,14 +9,17 @@ public class Movecomplete : MonoBehaviour
     public float turn = 5;
     public int count;
 
+    public int scoreCount { get; private set; }
+    public int doorCount { get; private set; }
+
     // Start is called before the first frame update
     void Start()
     {
-        count = 0;
+        //count = 0;
     }
 
     // Update is called once per frame
-    void Update()
+    void Run()
     {
         /* 
         if (Input.GetKey("up"))
@@ -52,8 +56,19 @@ public class Movecomplete : MonoBehaviour
 
             // 何らかの処理
             count = count + 1;
+            UIManager.Instance.WriteTresureCount(count);
+            StageManager.Instance.ClearJudge(count);
         }
     }
-   
+
+    public void Reset(int _availableDoors)
+    {
+        scoreCount = 0;
+        doorCount = _availableDoors;
+    }
+    
+    //Playerの初期化、リザルトまでデータを持っていく
+    
+    
 
 }

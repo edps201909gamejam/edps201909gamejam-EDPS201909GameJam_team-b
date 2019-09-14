@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public class ButtonScript : MonoBehaviour
 {
@@ -28,6 +25,16 @@ public class ButtonScript : MonoBehaviour
     public void Restart()
     {
         SceneSelectManager.Instance.GameRestart();
+    }
+
+    public void ExState()
+    {
+        SceneSelectManager.Instance.NextEx();
+    }
+
+    public void LoadTitle()
+    {
+        SceneSelectManager.Instance.ChangeTitleScene();
     }
 
 }

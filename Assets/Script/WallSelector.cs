@@ -30,7 +30,10 @@ public class WallSelector : MonoBehaviour
 
     private void Update() {
         string opposite = "";
-        Transform parent = selecting.transform.parent;
+        Transform parent = null;
+        if ( selecting ) { 
+            parent = selecting.transform.parent;
+        }
         if (Input.GetKey(KeyCode.Space) && parent.CompareTag("Untagged")) {
             if (selecting.name == "N") {
                 opposite = "S";

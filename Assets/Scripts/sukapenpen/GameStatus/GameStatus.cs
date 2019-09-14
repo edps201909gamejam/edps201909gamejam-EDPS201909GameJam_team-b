@@ -6,5 +6,7 @@ public abstract class GameStatus
 {
    public float elapsedTime { get; protected set; }
       
-   public abstract GameStatus Run(float _time = 0.0f, int _doors = 0);
+   public abstract GameStatus Run(float _time, int _doors, GameObject _player);
+
+   public abstract GameStatus NextEx();
 }
