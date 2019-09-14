@@ -43,7 +43,6 @@ public class Movecomplete : MonoBehaviour
         transform.position += dy * transform.forward * speed;
         transform.Rotate(0, dx * turn, 0);
 
-
     }
     void OnTriggerEnter(Collider hit)
     {

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Item
   - Wall
+  - TateBlock
+  - YokoBlock
+  - DoorWall
   layers:
   - Default
   - TransparentFX
