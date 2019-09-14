@@ -34,7 +34,7 @@ public class WallSelector : MonoBehaviour
         if ( selecting ) { 
             parent = selecting.transform.parent;
         }
-        if (Input.GetKey(KeyCode.Space) && parent.CompareTag("Untagged")) {
+        if (Input.GetKey(KeyCode.Space) && parent && parent.CompareTag("Untagged")) {
             if (selecting.name == "N") {
                 opposite = "S";
                 parent.tag = "TateBlock";

@@ -19,7 +19,7 @@ public class Movecomplete : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Run()
+    void Update()
     {
         /* 
         if (Input.GetKey("up"))
