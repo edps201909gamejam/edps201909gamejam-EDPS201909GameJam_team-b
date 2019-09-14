@@ -17,7 +17,7 @@ public class Movecomplete : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //count = 0;
+        count = 0;
     }
 
     // Update is called once per frame
@@ -60,11 +60,13 @@ public class Movecomplete : MonoBehaviour
             count = count + 1;
             UIManager.Instance.WriteTresureCount(count);
             StageManager.Instance.ClearJudge(count);
+            hit.transform.parent.gameObject.SetActive(false);
         }
     }
 
     public void Reset(int _availableDoors)
     {
+        count = 0;
         scoreCount = 0;
         DoorCount = _availableDoors;
         UIManager.Instance.WriteDoorCount(DoorCount);

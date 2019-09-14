@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/sukapenpen/StageSelectScene.unity
     guid: 79196c222ac9e4c18b09114b7d096564
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/sukapenpen/kettyGameScene/NewStage1Scene.unity
     guid: 2dc8f90446c49494eb02be5250b2ff54
   - enabled: 1
