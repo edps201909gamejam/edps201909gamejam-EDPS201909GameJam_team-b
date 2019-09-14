@@ -9,8 +9,10 @@ public class Movecomplete : MonoBehaviour
     public float turn = 5;
     public int count;
 
+    [SerializeField]
     public int scoreCount { get; private set; }
-    public int doorCount { get; private set; }
+
+    public int DoorCount;
 
     // Start is called before the first frame update
     void Start()
@@ -64,7 +66,14 @@ public class Movecomplete : MonoBehaviour
     public void Reset(int _availableDoors)
     {
         scoreCount = 0;
-        doorCount = _availableDoors;
+        DoorCount = _availableDoors;
+        UIManager.Instance.WriteDoorCount(DoorCount);
+    }
+
+    public void DeDoor()
+    {
+        DoorCount -= 1;
+        UIManager.Instance.WriteDoorCount(DoorCount);
     }
     
     //Playerの初期化、リザルトまでデータを持っていく

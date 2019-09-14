@@ -34,7 +34,7 @@ public class WallSelector : MonoBehaviour
         if ( selecting ) { 
             parent = selecting.transform.parent;
         }
-        if (Input.GetKey(KeyCode.Space) && parent && parent.CompareTag("Untagged")) {
+        if (Input.GetKey(KeyCode.Space) && parent && parent.CompareTag("Untagged") && GameObject.Find("Player").GetComponent<Movecomplete>().DoorCount > 0) {
             if (selecting.name == "N") {
                 opposite = "S";
                 parent.tag = "TateBlock";
@@ -51,6 +51,11 @@ public class WallSelector : MonoBehaviour
                 opposite = "E";
                 parent.tag = "YokoBlock";
             }
+            
+
+            Debug.Log(GameObject.Find("Player").GetComponent<Movecomplete>().DoorCount);
+            GameObject.Find("Player").GetComponent<Movecomplete>().DeDoor();
+
             selecting.gameObject.tag = "DoorWall";
             selecting.gameObject.GetComponent<Renderer>().sharedMaterial = doorMaterial;
             Debug.Log(selecting.transform.root);
